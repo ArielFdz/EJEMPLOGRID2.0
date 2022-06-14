@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.caja img{
+    width: 100%;
+    border-radius: 2px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.caja img:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.imagenLarga{
+    grid-column: span 5;
+}
+
+
